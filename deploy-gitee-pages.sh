@@ -3,5 +3,10 @@
 set -e
 
 GIT_SSH_COMMAND="ssh -v"
-echo "gitee-repo=$INPUT_GITEE_REPO"
-echo "commit-message=$INPUT_COMMIT_MESSAGE"
+
+git remote -v
+git remote set-url --push origin $INPUT_GITEE_REPO
+
+git remote -v
+git push -f origin gh-pages-source:gh-pages-source
+git push -f origin master:master
