@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+echo "SOURCE=$INPUT_GITEE_REPO"
+echo "DESTINATION=$INPUT_COMMIT_MESSAGE"
