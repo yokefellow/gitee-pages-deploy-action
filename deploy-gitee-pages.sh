@@ -2,5 +2,5 @@
 
 set -e
 
-echo "SOURCE=$INPUT_GITEE_REPO"
-echo "DESTINATION=$INPUT_COMMIT_MESSAGE"
+echo "gitee-repo=$INPUT_GITEE_REPO"
+echo "commit-message=$INPUT_COMMIT_MESSAGE"
