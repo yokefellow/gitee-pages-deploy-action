@@ -8,10 +8,10 @@ branding:
   icon: 'git-commit'
   color: 'orange'
 inputs:
-  gitee-repo:
+  gitee_repo:
     description: SSH URL of the Gitee repo 
     required: true
-  commit-message: 
+  commit_message: 
     description: If you need to customize the commit message for an integration you can do so.
     required: false
     default: Commit from GitHub action
