@@ -4,7 +4,7 @@ RUN apt-get update \
   && apt-get install -y git openssh-client \
   && echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
-COPY "entrypoint.sh" "/entrypoint.sh"
-RUN chmod +x /entrypoint.sh
+ADD *.sh /
+RUN chmod +x /*.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
