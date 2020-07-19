@@ -12,5 +12,5 @@ git remote -v
 
 git add -A
 git commit -m "$INPUT_COMMIT_MESSAGE"
-git push -f "$INPUT_GITEE_REPO" master
-git push -f "$INPUT_GITEE_REPO" gh-pages-source
+git pull origin master
+git push --all origin
