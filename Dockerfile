@@ -1,7 +1,7 @@
-FROM ubuntu:16.04
+FROM ubuntu
 
-RUN sudo apt-get update \
-  && sudo apt-get install -y git openssh-client \
+RUN apt-get update \
+  && apt-get install -y git openssh-client \
   && echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
 ADD *.sh /
