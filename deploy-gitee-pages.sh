@@ -11,5 +11,5 @@ git remote -v
 
 git add -A
 git commit -m "$INPUT_COMMIT_MESSAGE"
-
+git fetch --unshallow origin
 git push --all origin 
