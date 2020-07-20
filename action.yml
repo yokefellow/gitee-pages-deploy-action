@@ -20,12 +20,12 @@ inputs:
   git_user_name:
     description: The name of Git global config 
     required: true
-  source_local_branch:
-    description: The local branch of source code you committed
+  source_github_remote_branch:
+    description: The GitHub remote branch of source code you pushed
     required: false
-    default: master
-  source_remote_branch:
-    description: The remote branch of source code you want to push
+    default: gh-pages-source
+  source_gitee_remote_branch:
+    description: The Gitee remote branch of source code you want to push
     required: false
     default: gh-pages-source
   commit_message: 
