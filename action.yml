@@ -14,7 +14,17 @@ inputs:
   folder:
     description: The folder of GitHub Pages static files 
     required: true
+  git_user_email:
+    description: The email of Git config 
+    required: true
+  git_user_name:
+    description: The name of Git config 
+    required: true
+  source_branch:
+    description: The branch of source code
+    required: false
+    default: gh-pages-source
   commit_message: 
     description: If you need to customize the commit message for an integration you can do so.
     required: false
-    default: Commit from GitHub action
+    default: Commit from GitHub Actions
