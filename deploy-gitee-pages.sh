@@ -16,5 +16,4 @@ cd ..
 git remote rm origin
 git remote add origin $INPUT_GITEE_REPO
 
-git pull origin $INPUT_SOURCE_GITEE_REMOTE_BRANCH --allow-unrelated-histories
-git push origin $INPUT_SOURCE_GITHUB_REMOTE_BRANCH $INPUT_SOURCE_GITEE_REMOTE_BRANCH                                                   
+git push -f origin $INPUT_SOURCE_GITHUB_REMOTE_BRANCH:$INPUT_SOURCE_GITEE_REMOTE_BRANCH
