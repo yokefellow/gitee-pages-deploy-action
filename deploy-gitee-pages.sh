@@ -12,8 +12,6 @@ git commit -m "$INPUT_COMMIT_MESSAGE"
 git push -f "$INPUT_GITEE_REPO" master
 
 cd ..
-git add -A
-git commit -m "$INPUT_COMMIT_MESSAGE"
 
 git remote rm origin
 git remote add origin $INPUT_GITEE_REPO
