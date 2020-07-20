@@ -15,13 +15,17 @@ inputs:
     description: The folder of GitHub Pages static files 
     required: true
   git_user_email:
-    description: The email of Git config 
+    description: The email of Git global config 
     required: true
   git_user_name:
-    description: The name of Git config 
+    description: The name of Git global config 
     required: true
-  source_branch:
-    description: The branch of source code
+  source_local_branch:
+    description: The local branch of source code you committed
+    required: false
+    default: master
+  source_remote_branch:
+    description: The remote branch of source code you want to push
     required: false
     default: gh-pages-source
   commit_message: 
