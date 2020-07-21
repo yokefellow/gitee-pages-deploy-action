@@ -15,13 +15,13 @@ inputs:
     description: The folder of GitHub Pages static files 
     required: true
   git_user_email:
-    description: The email of Git global config 
+    description: The user.email of Git config 
     required: true
   git_user_name:
-    description: The name of Git global config 
+    description: The user.name of Git config 
     required: true
   source_github_remote_branch:
-    description: The GitHub remote branch of source code you pushed
+    description: The GitHub remote branch of source code you've pushed
     required: false
     default: gh-pages-source
   source_gitee_remote_branch:
