@@ -10,9 +10,10 @@ cd "$INPUT_FOLDER"
 git init
 
 if [ -n "$INPUT_CNAME" ]; then
-  echo "$INPUT_CNAME“ > CNAME
+  echo "$INPUT_CNAME" > CNAME
 fi
 
 git add -A
 git commit -m "$INPUT_COMMIT_MESSAGE"
 git push "$INPUT_GITEE_REPO" master
+
