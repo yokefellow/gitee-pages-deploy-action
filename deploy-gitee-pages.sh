@@ -8,13 +8,11 @@ git config --global user.name "$INPUT_GIT_USER_NAME"
 
 cd "$INPUT_FOLDER"
 git init
+
+if [ -n "$CNAME" ]; then
+  echo 'blog.yokefellow.com.cn' > CNAME
+fi
+
 git add -A
 git commit -m "$INPUT_COMMIT_MESSAGE"
 git push "$INPUT_GITEE_REPO" master
-
-# cd ..
-
-# git remote rm origin
-# git remote add origin $INPUT_GITEE_REPO
-
-# git push -f origin $INPUT_SOURCE_GITHUB_REMOTE_BRANCH:$INPUT_SOURCE_GITEE_REMOTE_BRANCH
