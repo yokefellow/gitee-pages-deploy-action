@@ -10,7 +10,7 @@ cd "$INPUT_FOLDER"
 git init
 git add -A
 git commit -m "$INPUT_COMMIT_MESSAGE"
-git push -f "$INPUT_GITEE_REPO" master
+git push "$INPUT_GITEE_REPO" master
 
 # cd ..
 
