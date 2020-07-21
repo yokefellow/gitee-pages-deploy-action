@@ -9,8 +9,8 @@ git config --global user.name "$INPUT_GIT_USER_NAME"
 cd "$INPUT_FOLDER"
 git init
 
-if [ -n "$CNAME" ]; then
-  echo 'blog.yokefellow.com.cn' > CNAME
+if [ -n "$INPUT_CNAME" ]; then
+  echo "$INPUT_CNAME“ > CNAME
 fi
 
 git add -A
