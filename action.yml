@@ -9,16 +9,16 @@ branding:
   color: 'orange'
 inputs:
   gitee_repo:
-    description: SSH URL of the Gitee repo 
+    description: SSH URL of the Gitee repo
     required: true
   folder:
-    description: The folder of GitHub Pages static files 
+    description: The folder of GitHub Pages static files
     required: true
   git_user_email:
-    description: The user.email of Git config 
+    description: The user.email of Git config
     required: true
   git_user_name:
-    description: The user.name of Git config 
+    description: The user.name of Git config
     required: true
   cname:
     description: Set custom domain
@@ -27,7 +27,7 @@ inputs:
     description: The branch of Gitee Pages you want to push
     required: false
     default: master
-  commit_message: 
+  commit_message:
     description: If you need to customize the commit message for an integration you can do so.
     required: false
     default: Commit from GitHub Actions
